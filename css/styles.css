@@ -1,0 +1,592 @@
+/*Fuentes*/
+
+@font-face {
+    font-family: "browallia";
+    src: url("font/browa.ttf") format("truetype"),
+    url("font/browab.ttf") format("truetype"),
+    url("font/browai.ttf") format("truetype"),
+    url("font/browaz.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "calibri";
+    src: url("font/calibri.ttf") format("truetype"),
+    url("font/calibrib.ttf") format("truetype"),
+    url("font/calibril.ttf") format("truetype"),
+    url("font/calibrili.ttf") format("truetype"),
+    url("font/calibrii.ttf") format("truetype"),
+    url("font/calibriz.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+*{
+    margin: 0px auto;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    background:white;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 520px 1000px 1000px 100px;
+    grid-template-areas: 
+        "cabecera cabecera cabecera"
+        "contenido-1 contenido-1 contenido-1"
+        "contenido-2 contenido-2 contenido-2"
+        "pie pie pie";
+    width: 100%;
+    height:2620px;
+    margin: 0px auto;
+}
+
+#container #cabecera{
+    grid-area: cabecera;
+    /*
+    background-color: #EFEFEF;
+    */
+    width: 100%;
+    background: url("../img/FondoPagina.png");
+    position: (200,200);
+}
+
+#container #cabecera #logo{
+    display: block;
+    width: 12%;
+    height:30px;
+    padding-top: 25px;
+    margin-left: 5.5%;
+}
+
+#container #cabecera #logo a{
+    font-size: 28px;
+    font-family: sans-serif,Arial, Helvetica;
+    color: black;
+
+}
+
+#container #cabecera #logo a img{
+    width: 17%;
+    height: auto;
+    margin-left: -8%;
+    margin-top: 5px;
+}
+
+#container #cabecera .menu{
+    padding-top: -18px;
+    
+}
+
+#container #cabecera .menu ul{
+    
+    margin-top: -22px;
+    list-style: none;
+}
+
+#container #cabecera #menu-1 ul{
+    display: grid;
+    margin-left: 37.5%;
+    grid-template-columns: repeat(4,1fr);
+    margin-right: 43%;
+}
+#container #cabecera #menu-1 ul li:first-child{
+    margin-left: 5%;
+}
+
+#container #cabecera #menu-2 ul{
+    display: grid;
+    margin-left: 78.5%;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#container #cabecera #menu-2 ul li:nth-child(2){
+    margin-left: -22%;
+}
+
+#container #cabecera .menu ul li{
+    display: inline-block;
+}
+
+
+#container #cabecera .menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #818284;
+    font-family: sans-serif,Arial, Helvetica;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+#container #cabecera .menu ul li a:hover{
+    color: #13161B;
+}
+
+#container #cabecera #menu-2 ul li a:hover{
+    border-bottom: 3px solid #1EC185;
+    padding-bottom: 5px;
+
+}
+
+#container #cabecera #texto-meet {
+    display: block;
+    height: 151px;
+    width: 37%;
+    text-align: center;
+    margin-top: 120px;
+    color: black;
+    font-size: 40px;
+    font-family: "calibri";
+    margin-left: 8%;
+}
+
+#container #cabecera #enlaces-A{
+    height: 60px;
+    width: 13.5%;
+    background: white;
+    margin-left: 8.4%;
+    margin-top: 42px;
+    
+}
+
+#container #cabecera #enlaces-A a{
+    display: block;
+    height: 60px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    color: #13161B;
+    text-align: center;
+    padding-top: 16px;
+}
+
+#container #cabecera #enlaces-A:hover{
+    border-radius: 150px;
+    background: black;
+}
+
+#container #cabecera #enlaces-A a:hover{
+    
+    font-size: 22px;
+    color: white;
+}
+
+
+#container #cabecera .boton-play {
+    display: block;
+    float: left;
+    margin-left: 25%;
+    margin-top: -60px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 60px;
+    width: 12%;
+    text-align: center;
+    line-height: 60px;
+    padding-left: 2%;
+}
+
+
+#container #cabecera .boton-play:hover {
+    border-radius: 150px;
+    font-size: 22px;
+    color: white;
+    background: red;
+    padding-right: 2%;
+
+}
+
+
+#container #cabecera a img{
+    width: 15px;
+    height: auto;
+
+}
+
+#container #cabecera .boton-play:hover img{
+    display: none;
+}
+
+#container #contenido{
+    grid-area: contenido-1;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+}
+
+#container #contenido .texto-centrado h2{
+    display: block;
+    width: 55.9%;
+    height: 140px;
+    text-align: center;
+    font-family: "calibri";
+    font-size: 26px;
+    margin-top: 150px;
+    margin-left: 22%;
+    margin-bottom: 150px;
+}
+
+#container #contenido .primera-imagen{
+    display: grid;
+    width: 89%;
+    height: 1135px;
+    background-color: #EFEFEF;
+}
+
+
+#container #contenido .primera-imagen h3 {
+    display: block;
+    text-align: center;
+    width: 25%;
+    height: 50px;
+    font-family: "calibri";
+    font-size: 27px;
+    margin-left: 7%;
+    margin-top: 79px;
+    float: right;
+    color: #1a1a1d;
+}
+
+#container #contenido .primera-imagen p {
+    width: 46%;
+    height: 100px;
+    color: #9D8292;
+    text-align: initial;
+    margin-top: -127px;
+    margin-left: 53.5%;
+    font-size: 25px;
+}
+#container #contenido .primera-imagen img {
+    display: block;
+    width: 90%;
+    height: 800px;
+    box-shadow: 0px 0px 15px gray;
+    margin-top: 50px;
+}
+
+
+
+#container #contenido .segunda-imagen{
+    display: grid;
+    width: 89%;
+    height: 1135px;
+    margin-top: 40px;
+    background-color: #EFEFEF;
+}
+
+
+#container #contenido .segunda-imagen h3 {
+    display: block;
+    text-align: center;
+    width: 25%;
+    height: 50px;
+    font-family: "calibri";
+    font-size: 27px;
+    margin-left: 7%;
+    margin-top: 79px;
+    float: right;
+    color: #1a1a1d;
+}
+
+#container #contenido .segunda-imagen p {
+    width: 46%;
+    height: 100px;
+    color: #9D8292;
+    text-align: initial;
+    margin-top: -127px;
+    margin-left: 53.5%;
+    font-size: 25px;
+}
+#container #contenido .segunda-imagen img {
+    display: block;
+    width: 90%;
+    height: 800px;
+    box-shadow: 0px 0px 15px gray;
+    margin-top: 50px;
+}
+
+
+#footer{
+    grid-area: pie;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3100px;
+    font-family: sans-serif,Arial, Helvetica;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#footer p a{    
+    text-decoration: none;
+    color: black;
+
+}
+
+#footer p a:hover{
+    color: red;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    transition: all 300ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#cabecera{
+    height: 520px;
+    
+    background-color: #EFEFEF;
+
+    background: url("");
+    background-position: -200px -200px;
+    overflow: hidden;
+    
+}
+#cabecera .fondo{
+    width: 100%;
+    height: auto;
+    position:initial;
+    position: relative;
+}
+
+#cabecera #logo{
+    display: block;
+    width: 12%;
+    height:30px;
+    padding-top: 25px;
+    margin-left: 5.5%;
+}
+
+#cabecera #logo a{
+    font-size: 28px;
+    font-family: sans-serif,Arial, Helvetica;
+    color: black;
+
+}
+
+#cabecera #logo a img{
+    width: 17%;
+    height: auto;
+}
+
+#cabecera .menu{
+    padding-top: -18px;
+    
+}
+
+#cabecera .menu ul{
+    list-style: none;
+    float: left;
+    margin-top: -22px;
+}
+
+#cabecera #menu-1 ul{
+    margin-left: 37.5%;
+}
+
+#cabecera #menu-2 ul{
+    margin-left: 82%;
+}
+
+#cabecera .menu ul li{
+    display: inline-block;
+}
+
+
+#cabecera .menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #818284;
+    font-family: sans-serif,Arial, Helvetica;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+#cabecera .menu ul li a:hover{
+    color: #13161B;
+}
+
+#cabecera #menu-2 ul li a:hover{
+    border-bottom: 3px solid #1EC185;
+    padding-bottom: 5px;
+
+}
+
+#cabecera #texto-meet {
+    display: block;
+    height: 151px;
+    width: 37%;
+    text-align: center;
+    margin-top: 120px;
+    color: black;
+    font-size: 40px;
+    font-family: "calibri";
+    margin-left: 8%;
+}
+
+#cabecera #enlaces-A{
+    height: 60px;
+    width: 13.5%;
+    background: white;
+    margin-left: 8.4%;
+    margin-top: 42px;
+    
+}
+
+#cabecera #enlaces-A a{
+    display: block;
+    height: 60px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    color: #13161B;
+    text-align: center;
+    padding-top: 16px;
+}
+
+#cabecera #enlaces-A:hover{
+    border-radius: 150px;
+    background: black;
+}
+
+#cabecera #enlaces-A a:hover{
+    
+    font-size: 22px;
+    color: white;
+}
+
+
+#cabecera .play {
+    display: block;
+    float: left;
+    margin-left: 25%;
+    margin-top: -60px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 60px;
+    width: 14%;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+#cabecera .play:hover {
+    border-radius: 150px;
+    font-size: 22px;
+    color: white;
+    background: black;
+    padding-right: 2%;
+
+}
+
+
+#cabecera a img{
+    width: 15px;
+    height: auto;
+
+}
+
+#cabecera .play img:hover{
+    display: none;
+}
+
+.texto-centrado h2{
+    display: block;
+    width: 55.9%;
+    height: 140px;
+    text-align: center;
+    font-family: "calibri";
+    font-size: 26px;
+    margin-top: 150px;
+    margin-left: 22%;
+    margin-bottom: 150px;
+}
+
+*/
+
+
+
